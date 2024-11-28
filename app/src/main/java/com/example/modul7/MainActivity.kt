@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                 MappingHelper.mapCursorToArrayList(cursor)
             }
             val homework = deferredHomework.await()
-            if (homework.size > 0) {
+            if (homework.isNotEmpty()) {
                 adapter.listHomework = homework
             } else {
                 adapter.listHomework = ArrayList()

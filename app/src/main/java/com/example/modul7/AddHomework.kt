@@ -114,6 +114,7 @@ class AddHomeworkActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
+        super.onBackPressed()
         showAlertDialog(ALERT_DIALOG_CLOSE)
     }
 
